@@ -80,6 +80,9 @@ TARGET_USES_ION := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -134,10 +137,15 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+<<<<<<< HEAD
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+=======
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+>>>>>>> parent of 19a27fc... lavender : [SQUASHED]Import Pixel Power Hal
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
