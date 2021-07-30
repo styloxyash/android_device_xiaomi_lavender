@@ -199,8 +199,7 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    group system
    disabled
 
-<<<<<<< HEAD
-=======
+
 ## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
